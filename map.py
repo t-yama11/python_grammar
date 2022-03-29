@@ -39,11 +39,8 @@ def sample3():
     print(list1)
 
 def sample4():
-    def multi(element):
-        return 2*element
-
     tuple1 = (1,2,3,4,5)
-    tuple1 = tuple(map(multi, tuple1))
+    tuple1 = tuple(map(lambda e: e*2, tuple1))
     print(tuple1)
 
 if __name__ == "__main__":
