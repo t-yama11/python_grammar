@@ -24,7 +24,7 @@ def sample_all():
 
 def test1_any():
     array = np.array([0, -1, 2])
-    judge = any(map(lambda item: item>=0, array)) # map(lambda item: item>=0, array)ってどういう意味?
+    judge = any(map(lambda item: item>=0, array)) # arrayの要素が0以上であるか判定している.
     print(judge) # Trueと表示.
 
 def test1_all():
