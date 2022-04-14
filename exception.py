@@ -5,7 +5,6 @@ try:
 except 例外:
     例外が起きた際の処理
 """
-
 class TypeIntError(TypeError):
     def __init__(self, num):
         self.num = num
@@ -21,7 +20,8 @@ def main():
     val = a/b
     if not isinstance(val, int):
         raise TypeIntError(val)
-        
+    
+    # 例外が発生しない場合, 計算結果を表示する.
     print(val)
 
 
